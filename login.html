@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Friends Cloud Login</title>
+    <link href="reg/assets2/css/bootstrap.css" rel="stylesheet">
+    <link href="reg/assets2/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="reg/assets2/css/style.css" rel="stylesheet">
+    <link href="reg/assets2/css/style-responsive.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" action="/friendscloud/Authentication" method="post">
+		        <h2 class="form-login-heading">sign in now</h2>
+		        <div class="login-wrap">
+		            <input type="text" name="user_name" class="form-control" placeholder="User ID" autofocus>
+		            <br>
+		            <input type="password" name="pass" class="form-control" placeholder="Password">
+		            <label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+		
+		                </span></form>
+		            </label>
+		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+				<br>
+				<br>
+				<br>
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		              <form method="get" action="summit()">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                      
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Forgot Password ?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Enter your e-mail address below to reset your password.</p>
+		                          <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+		                          <button class="btn btn-theme" type="submit">Submit</button>
+		                          
+		                      </div>
+		                  </div>
+		                  </form>
+		              </div>
+		          </div>
+		
+		      	  	
+	  	
+	  	</div>
+	  </div>
+
+    <script src="reg/assets2/js/jquery.js"></script>
+    <script src="reg/assets2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="reg/assets2/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("reg/assets2/img/login-bg.jpg", {speed: 500});
+    </script>
+
+
+  </body>
+</html>
